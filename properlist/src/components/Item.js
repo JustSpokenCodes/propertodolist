@@ -1,8 +1,7 @@
 import React from "react";
 
 const Item = props => {
-    return <div className={props.item.watched ? "watched" : "item"} 
-        onClick={() => props.toggleItem(props.item.id)}>
+    return <div className={props.item.watched ? "watched" : "item"} onClick={() => props.toggleItem(props.item.id)}>
             {props.item.name}
         </div>;
 };

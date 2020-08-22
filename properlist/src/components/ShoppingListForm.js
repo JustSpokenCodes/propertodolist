@@ -8,13 +8,13 @@ class ShoppingListFrom extends React.Component {
         };
     }
 
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value})
+    handleChange = event => {
+        this.setState({ [event.target.name]: event.target.value})
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-        this.props.addAnime(this.state.input);
+    handleSubmit = event => {
+        event.preventDefault();
+        this.props.addItem(this.state.input);
         this.setState({input: ""});
     };
 
